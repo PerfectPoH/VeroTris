@@ -16,7 +16,8 @@ public class GiocoTris {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("ciao");
-        //hi
+        //Per caricare il progetto su Github -> team nella barra in alto -> commit  git -> remote -> push
+        //Per caricare il progetto da Github -> tasto destro sul nome del progetto -> git -> remote -> pull 
     }
     
 }
