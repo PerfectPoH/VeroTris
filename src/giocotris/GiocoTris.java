@@ -15,8 +15,7 @@ public class GiocoTris {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("ciao negretto");
-        //ABED gay
+        
     }
     
 }
