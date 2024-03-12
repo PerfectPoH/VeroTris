@@ -15,6 +15,10 @@ public class HomePage extends javax.swing.JFrame {
      */
     public HomePage() {
         initComponents();
+        UnoVsUno.setContentAreaFilled(false);
+        UnoVsUno.setBorderPainted(false);   
+        UnoVsPc.setContentAreaFilled(false);
+        UnoVsPc.setBorderPainted(false);   
     }
 
     /**
@@ -26,39 +30,59 @@ public class HomePage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        OneVsPc = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        Setting = new javax.swing.JButton();
+        UnoVsPc = new javax.swing.JButton();
         UnoVsUno = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        Setting = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        OneVsPc.setText("jButton1");
-        getContentPane().add(OneVsPc, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 303, 250, 30));
+        Setting.setFont(new java.awt.Font("MV Boli", 0, 12)); // NOI18N
+        Setting.setIcon(new javax.swing.ImageIcon(getClass().getResource("/giocotris/settings.png"))); // NOI18N
+        Setting.setText("Setting");
+        Setting.setBorderPainted(false);
+        Setting.setContentAreaFilled(false);
+        Setting.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SettingActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 270, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/giocotris/people.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, 30, 30));
+        UnoVsPc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/giocotris/robot.png"))); // NOI18N
+        UnoVsPc.setText("vs");
+        UnoVsPc.setToolTipText("");
+        UnoVsPc.setBorderPainted(false);
+        UnoVsPc.setContentAreaFilled(false);
+        UnoVsPc.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        UnoVsPc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UnoVsPcActionPerformed(evt);
+            }
+        });
+        getContentPane().add(UnoVsPc, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 270, 30));
 
         UnoVsUno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/giocotris/people.png"))); // NOI18N
         UnoVsUno.setText("vs");
+        UnoVsUno.setBorderPainted(false);
+        UnoVsUno.setContentAreaFilled(false);
         UnoVsUno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        UnoVsUno.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        UnoVsUno.setOpaque(true);
+        UnoVsUno.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         UnoVsUno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UnoVsUnoActionPerformed(evt);
             }
         });
-        getContentPane().add(UnoVsUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 260, 30));
+        getContentPane().add(UnoVsUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 270, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/giocotris/HomeTris.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 410));
 
-        Setting.setText("jButton1");
-        getContentPane().add(Setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 360, 250, 30));
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 246, 90, 30));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -78,7 +102,24 @@ public class HomePage extends javax.swing.JFrame {
 
     private void UnoVsUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoVsUnoActionPerformed
         // TODO add your handling code here:
+        setVisible(false);
+        VsUno v = new VsUno();
+        v.setVisible(true);
     }//GEN-LAST:event_UnoVsUnoActionPerformed
+
+    private void UnoVsPcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnoVsPcActionPerformed
+        // TODO add your handling code here:
+        setVisible(false);
+        VsPc v = new VsPc();
+        v.setVisible(true);
+    }//GEN-LAST:event_UnoVsPcActionPerformed
+
+    private void SettingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingActionPerformed
+        // TODO add your handling code here:
+        setVisible(false);
+        SettingPage v = new SettingPage();
+        v.setVisible(true);
+    }//GEN-LAST:event_SettingActionPerformed
 
     /**
      * @param args the command line arguments
@@ -116,11 +157,11 @@ public class HomePage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton OneVsPc;
     private javax.swing.JButton Setting;
+    private javax.swing.JButton UnoVsPc;
     private javax.swing.JButton UnoVsUno;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
