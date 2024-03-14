@@ -128,7 +128,7 @@ public class VsUno extends javax.swing.JFrame {
         jLabel1.setMaximumSize(new java.awt.Dimension(1273, 720));
         jLabel1.setMinimumSize(new java.awt.Dimension(1273, 720));
         jLabel1.setPreferredSize(new java.awt.Dimension(1273, 720));
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1273, 720));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
