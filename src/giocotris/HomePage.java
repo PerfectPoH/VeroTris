@@ -45,25 +45,27 @@ public class HomePage extends javax.swing.JFrame {
         Setting.setText("Setting");
         Setting.setBorderPainted(false);
         Setting.setContentAreaFilled(false);
+        Setting.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Setting.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SettingActionPerformed(evt);
             }
         });
-        getContentPane().add(Setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 270, 30));
+        getContentPane().add(Setting, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 350, 290, 40));
 
         UnoVsPc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/giocotris/robot.png"))); // NOI18N
         UnoVsPc.setText("vs");
         UnoVsPc.setToolTipText("");
         UnoVsPc.setBorderPainted(false);
         UnoVsPc.setContentAreaFilled(false);
+        UnoVsPc.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         UnoVsPc.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         UnoVsPc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UnoVsPcActionPerformed(evt);
             }
         });
-        getContentPane().add(UnoVsPc, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 270, 30));
+        getContentPane().add(UnoVsPc, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 300, 290, 30));
 
         UnoVsUno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/giocotris/people.png"))); // NOI18N
         UnoVsUno.setText("vs");
@@ -76,7 +78,7 @@ public class HomePage extends javax.swing.JFrame {
                 UnoVsUnoActionPerformed(evt);
             }
         });
-        getContentPane().add(UnoVsUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 270, 40));
+        getContentPane().add(UnoVsUno, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 300, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/giocotris/HomeTris.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 410));
