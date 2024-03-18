@@ -28,8 +28,8 @@ public class VsUno extends javax.swing.JFrame {
     private String currentPlayer;
 
     Random random = new Random();
-    ImageIcon iconZero = new ImageIcon("C:\\Users\\Niccolo'\\Desktop\\tris\\o.jpg");
-    ImageIcon iconX = new ImageIcon("C:\\Users\\Niccolo'\\Desktop\\tris\\x.jpg");
+    ImageIcon iconZero = new ImageIcon("o.jpg");
+    ImageIcon iconX = new ImageIcon("x.jpg");
     private int po=0;
     private int px=0;
 
